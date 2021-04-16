@@ -1,0 +1,25 @@
+{
+  "name": "hexo-tag-gcharts",
+  "version": "0.1.0-beta.1",
+  "description": "A hexo tag for inserting google charts in your blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hexo",
+    "googlecharts",
+    "charts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyksit/hexo-tag-gcharts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skyksit/hexo-tag-gcharts/issues",
+    "email": "skyksit@gmail.com"
+  },
+  "author": "Kim Byoung Chul <skyksit@gmail.com> (https://skyksit.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/skyksit/hexo-tag-gcharts#readme"
+}

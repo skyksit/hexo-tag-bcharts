@@ -1,0 +1,18 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  if (!window.google) {
+    document.body.innerHTML = 'You need to include the script //www.gstatic.com/charts/loader.js on your template';
+    throw 'Google Charts JS API is needed';
+  } else {
+    (function() {
+      google.charts.load('current', {'packages':['<%- packageType %>']});
+      google.charts.setOnLoadCallback(function() {
+        var data = google.visualization.arrayToDataTable(<%- data %>);
+        var options = <%= options %>
+        var chart = new google.visualization.<%- chartType %>(document.getElementById('<%- id %>'));
+        chart.draw(data, options);
+      });
+    });
+  }
+</script>
+<div id="<%- id %>" style="width: <%- width %>;height: <%- height %>;margin: 0 auto"></div>
