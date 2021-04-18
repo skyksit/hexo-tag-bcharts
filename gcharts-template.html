@@ -12,7 +12,7 @@
         var chart = new google.visualization.<%- chartType %>(document.getElementById('<%- id %>'));
         chart.draw(data, options);
       });
-    });
+    })();
   }
 </script>
 <div id="<%- id %>" style="width: <%- width %>;height: <%- height %>;margin: 0 auto"></div>
