@@ -18,7 +18,7 @@ function gchartsMaps(args, content) {
   // Output into 
   return _.template(template)({
     id: 'gcharts' + ((Math.random() * 99999) | 0),
-    packageType: args[0],
+    packageType: args[0] || 'corechart',
     chartType: args[1],
     data: data,
     options: options,
