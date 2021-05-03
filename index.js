@@ -1,33 +1,33 @@
 var fs = require('fs');
+const { format } = require('path');
 var path = require('path');
 var _ = require('underscore');
 
-var filePath = path.join(__dirname, 'gcharts-template.html');
+var filePath = path.join(__dirname, 'bcharts-template.html');
 
-function gchartsMaps(args, content) {
+function bchartsMaps(args, content) {
   var template = fs.readFileSync(filePath).toString();
   var data = {};
-  var options = {};
+  var timeouts = {};
 
   if (content.length) {
-    var cont = content.split('options');
+    var cont = content.split('timeout');
     data = cont[0];
-    options = cont[1];
+    for(let i=1; i < cont.length; i++)
+      timeouts.push(cont[i]);
   }
     
   // Output into 
   return _.template(template)({
-    id: 'gcharts' + ((Math.random() * 99999) | 0),
-    packageType: args[0] || 'corechart',
-    chartType: args[1],
+    id: 'bcharts' + ((Math.random() * 99999) | 0),
     data: data,
-    options: options,
-    width: args[2] || '85%',
-    height: args[3] || '300px'
+    timeouts: timeouts,
+    width: args[0] || '85%',
+    height: args[1] || '300px'
   });
 }
 
-hexo.extend.tag.register('gcharts', gchartsMaps, {
+hexo.extend.tag.register('bcharts', bchartsMaps, {
   async: true,
   ends: true
 });

@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="https://naver.github.io/billboard.js/release/latest/dist/theme/datalab.min.css">
+<script src="https://naver.github.io/billboard.js/release/latest/dist/billboard.pkgd.min.js"></script>
+<script type="text/javascript">
+  var chart = bb.generate({
+    <%= data %>,
+    bindto: "#<%- id %>"
+  });
+  <% timeouts.forEach(function (timeout, index) { %>
+      <%= timeout %>
+  <% }); %>
+</script>
+<div id="<%- id %>" style="width: <%- width %>;height: <%- height %>;margin: 0 auto"></div>

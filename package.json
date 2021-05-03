@@ -1,26 +1,26 @@
 {
-  "name": "hexo-tag-gcharts",
-  "version": "0.2.0",
-  "description": "A hexo tag for inserting google charts in your blog",
+  "name": "hexo-tag-bcharts",
+  "version": "0.1.0",
+  "description": "A hexo tag for inserting billboard.js charts in your blog",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "hexo",
-    "googlecharts",
+    "billboard.js",
     "chart",
     "charts"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skyksit/hexo-tag-gcharts.git"
+    "url": "git+https://github.com/skyksit/hexo-tag-bcharts.git"
   },
   "bugs": {
-    "url": "https://github.com/skyksit/hexo-tag-gcharts/issues",
+    "url": "https://github.com/skyksit/hexo-tag-bcharts/issues",
     "email": "skyksit@gmail.com"
   },
   "author": "Kim Byoung Chul <skyksit@gmail.com> (https://skyksit.com)",
   "license": "MIT",
-  "homepage": "https://github.com/skyksit/hexo-tag-gcharts#readme"
+  "homepage": "https://github.com/skyksit/hexo-tag-bcharts#readme"
 }
