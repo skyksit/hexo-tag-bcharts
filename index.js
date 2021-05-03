@@ -21,8 +21,9 @@ function bchartsMaps(args, content) {
     id: 'bcharts' + ((Math.random() * 99999) | 0),
     data: data,
     timeouts: timeouts,
-    width: args[0] || '85%',
-    height: args[1] || '300px'
+    chartName: args[0] || 'chart',
+    width: args[1] || '85%',
+    height: args[2] || '300px'
   });
 }
 

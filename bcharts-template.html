@@ -2,7 +2,7 @@
 <script src="https://naver.github.io/billboard.js/release/latest/dist/billboard.pkgd.min.js"></script>
 <div id="<%- id %>" style="width: <%- width %>;height: <%- height %>;margin: 0 auto"></div>
 <script type="text/javascript">
-  var chart = bb.generate({
+  var <%- chartName %> = bb.generate({
     <%= data %>,
     bindto: "#<%- id %>"
   });
