@@ -13,8 +13,7 @@ function bchartsMaps(args, content) {
   if (content.length) {
     var cont = content.split('timeout');
     data = cont[0];
-    for(let i=1; i < cont.length; i++)
-      timeouts.push(cont[i]);
+    timeouts = cont[1];
   }
     
   // Output into 
